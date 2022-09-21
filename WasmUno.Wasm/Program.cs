@@ -31,6 +31,8 @@ namespace WasmUno.Wasm
                 using (MemoryStream pdfStream = new())
                 {
                     Document document = new Document(docStream);
+                    //document.FontSettings=new Aspose.Words.Fonts.FontSettings();
+                    //document.FontSettings.SubstitutionSettings.FontConfigSubstitution.Enabled = true;
                     document.Save(pdfStream, SaveFormat.Pdf);
                     return Convert.ToBase64String(pdfStream.ToArray());
                 }

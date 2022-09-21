@@ -35,6 +35,5 @@
     <PackageReference Include="Aspose.Words" Version="22.9.0" />
     <PackageReference Include="Uno.Wasm.Bootstrap" Version="3.3.1" />
     <PackageReference Include="Uno.Wasm.Bootstrap.DevServer" Version="3.3.1" />
-    <PackageReference Include="Uno.WinUI.WebAssembly" Version="4.5.9" />
   </ItemGroup>
 </Project>
