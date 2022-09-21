@@ -32,9 +32,7 @@
     <None Include="LinkerConfig.xml" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="DocxToHtml" Version="1.0.4" />
-    <PackageReference Include="HtmlRenderer.PdfSharp.NetStandard2" Version="1.5.1.1" />
-    <PackageReference Include="SkiaSharp.NativeAssets.WebAssembly" Version="2.88.2" />
+    <PackageReference Include="Aspose.Words" Version="22.9.0" />
     <PackageReference Include="Uno.Wasm.Bootstrap" Version="3.3.1" />
     <PackageReference Include="Uno.Wasm.Bootstrap.DevServer" Version="3.3.1" />
     <PackageReference Include="Uno.WinUI.WebAssembly" Version="4.5.9" />
