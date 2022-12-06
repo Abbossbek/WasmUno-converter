@@ -31,10 +31,6 @@ namespace WasmUno.Wasm
             {
                 using (HttpClient client = new())
                 {
-                    //client.DefaultRequestHeaders.Add("origin", "*");
-                    //client.DefaultRequestHeaders.Add("access-control-allow-origin", "*");
-                    //client.DefaultRequestHeaders.Add("Access-Control-Allow-Headers", "Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers");
-                    //client.DefaultRequestHeaders.Add("access-control-request-method", "GET, POST, PUT, PATCH, OPTIONS, DELETE");
                     using (Stream docStream = await client.GetStreamAsync($"https://file.ijro.uz/download/{id}/content"))
                     using (MemoryStream pdfStream = new())
                     {
