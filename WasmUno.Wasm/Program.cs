@@ -25,7 +25,7 @@ namespace WasmUno.Wasm
             Console.WriteLine($"Hello {name}!");
             return $"Hello {name}!";
         }
-        public static async Task<string> DocToPdf(string id)
+        public static async Task<byte[]> DocToPdf(string id)
         {
             try
             {
@@ -38,7 +38,7 @@ namespace WasmUno.Wasm
                         //document.FontSettings=new Aspose.Words.Fonts.FontSettings();
                         //document.FontSettings.SubstitutionSettings.FontConfigSubstitution.Enabled = true;
                         document.Save(pdfStream, SaveFormat.Pdf);
-                        return Convert.ToBase64String(pdfStream.ToArray());
+                        return pdfStream.ToArray();
                     }
                 }
             }
